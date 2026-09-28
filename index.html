@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гид по устройству ПК: комплектующие простыми словами</title>
+  <meta name="description" content="Понятное и наглядное руководство по устройству персонального компьютера для начинающих. Процессор, видеокарта, память, накопители и конфигуратор сборки.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Навигационная панель -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" id="logo-link">
+        <span class="logo-icon">💻</span>
+        <span class="logo-title">PC<span class="logo-accent">Guide</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#cpu" class="nav-link">Процессор</a>
+        <a href="#gpu" class="nav-link">Видеокарта</a>
+        <a href="#ram" class="nav-link">Память</a>
+        <a href="#storage" class="nav-link">Накопители</a>
+        <a href="#motherboard" class="nav-link">Материнка</a>
+        <a href="#psu" class="nav-link">Питание</a>
+        <a href="#builder" class="nav-link">Сборки</a>
+        <a href="#quiz" class="nav-link btn-nav-quiz">Тест</a>
+      </nav>
+
+      <button class="mobile-toggle-btn" id="mobile-menu-toggle" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Главный баннер (Hero) -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-glow hero-bg-glow-1"></div>
+    <div class="hero-bg-glow hero-bg-glow-2"></div>
+    <div class="container hero-container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span> Справочник для начинающих
+      </div>
+      <h1 class="hero-title">Как устроен современный компьютер</h1>
+      <p class="hero-subtitle">
+        Без сложных научных терминов и заумных формул. Простое и наглядное руководство о том, из каких деталей состоит ПК, за что они отвечают и как их правильно выбирать.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#components" class="btn btn-primary" id="btn-explore">Изучить компоненты ↓</a>
+        <a href="#builder" class="btn btn-secondary" id="btn-builder-cta">Подобрать сборку ПК</a>
+      </div>
+
+      <div class="hero-stats-grid">
+        <div class="stat-card">
+          <span class="stat-number">6</span>
+          <span class="stat-label">Основных узлов</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Понятный язык</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Готовых шаблона ПК</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">5 мин</span>
+          <span class="stat-label">На освоение базы</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Интродукция: общая концепция -->
+  <section class="intro-section">
+    <div class="container">
+      <div class="analogy-box">
+        <div class="analogy-icon">💡</div>
+        <div class="analogy-text">
+          <h3>Аналогия: компьютер как офис компании</h3>
+          <p>
+            Чтобы понять работу ПК, представьте офис: <strong>Процессор</strong> — это главный аналитик, который решает задачи; <strong>Оперативная память</strong> — его рабочий стол с открытыми бумагами; <strong>SSD-накопитель</strong> — архивный шкаф, откуда достают нужные папки; а <strong>Видеокарта</strong> — художник-оформитель, рисующий картинку для показа клиентам.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Основной раздел компонентов -->
+  <section class="components-section" id="components">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="section-tag">Анатомия ПК</span>
+        <h2 class="section-title">Ключевые комплектующие</h2>
+        <p class="section-desc">Каждый элемент выполняет строго определённую функцию. Ниже подробно о каждом из них.</p>
+      </div>
+
+      <div class="components-grid">
+        
+        <!-- 1. CPU -->
+        <article class="comp-card" id="cpu">
+          <div class="comp-header">
+            <div class="comp-icon-box cpu-color">
+              <span>🧠</span>
+            </div>
+            <div class="comp-meta">
+              <span class="comp-tag">Вычисления</span>
+              <h3 class="comp-name">Центральный процессор (CPU)</h3>
+            </div>
+          </div>
+          <p class="comp-summary">
+            «Мозг» компьютера. Выполняет все базовые вычисления, координирует команды операционной системы и управляет потоками данных между всеми устройствами.
+          </p>
+          <div class="comp-specs-list">
+            <div class="spec-row">
+              <span class="spec-name">Количество ядер</span>
+              <span class="spec-val">4 для офиса, 6–8 для игр, 12+ для монтажа</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Тактовая частота</span>
+              <span class="spec-val">Измеряется в ГГц (обычно 3.5 – 5.5 ГГц)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Основные бренды</span>
+              <span class="spec-val">Intel (Core i3/i5/i7/i9) и AMD (Ryzen 3/5/7/9)</span>
+            </div>
+          </div>
+          <div class="comp-tip">
+            <strong>Совет:</strong> Для большинства современных игр процессор с 6 ядрами (например, Ryzen 5 или Core i5) — это оптимальный баланс по цене и скорости.
+          </div>
+        </article>
+
+        <!-- 2. GPU -->
+        <article class="comp-card" id="gpu">
+          <div class="comp-header">
+            <div class="comp-icon-box gpu-color">
+              <span>🎮</span>
+            </div>
+            <div class="comp-meta">
+              <span class="comp-tag">Графика</span>
+              <h3 class="comp-name">Видеокарта (GPU)</h3>
+            </div>
+          </div>
+          <p class="comp-summary">
+            Отвечает за отрисовку трёхмерных миров в играх, вывод изображения на монитор, работу с 3D-графикой и ускорение нейросетей.
+          </p>
+          <div class="comp-specs-list">
+            <div class="spec-row">
+              <span class="spec-name">Тип видеокарты</span>
+              <span class="spec-val">Встроенная (в процессор) или Дискретная (отдельная)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Видеопамять (VRAM)</span>
+              <span class="spec-val">8 ГБ (база для 1080p), 12–16 ГБ (для 2K и 4K)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Производители</span>
+              <span class="spec-val">NVIDIA (GeForce RTX) и AMD (Radeon RX)</span>
+            </div>
+          </div>
+          <div class="comp-tip">
+            <strong>Совет:</strong> В игровом ПК видеокарта обычно забирает около 40–50% от всей стоимости системного блока.
+          </div>
+        </article>
+
+        <!-- 3. RAM -->
+        <article class="comp-card" id="ram">
+          <div class="comp-header">
+            <div class="comp-icon-box ram-color">
+              <span>⚡</span>
+            </div>
+            <div class="comp-meta">
+              <span class="comp-tag">Быстродействие</span>
+              <h3 class="comp-name">Оперативная память (RAM)</h3>
+            </div>
+          </div>
+          <p class="comp-summary">
+            Сверхбыстрая память, в которой хранятся данные запущенных прямо сейчас программ, вкладок браузера и уровней игр. При выключении ПК она полностью очищается.
+          </p>
+          <div class="comp-specs-list">
+            <div class="spec-row">
+              <span class="spec-name">Оптимальный объём</span>
+              <span class="spec-val">16 ГБ — стандарт, 32 ГБ — комфорт с запасом</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Поколение памяти</span>
+              <span class="spec-val">DDR4 (доступная классика) и DDR5 (актуальный стандарт)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Режим работы</span>
+              <span class="spec-val">Двухканальный (ставить 2 планки по 8/16 ГБ)</span>
+            </div>
+          </div>
+          <div class="comp-tip">
+            <strong>Совет:</strong> Всегда покупайте память комплектом из двух одинаковых планок (например, 2×8 ГБ вместо 1×16 ГБ), чтобы включить двухканальный режим (+15-20% скорости).
+          </div>
+        </article>
+
+        <!-- 4. Storage -->
+        <article class="comp-card" id="storage">
+          <div class="comp-header">
+            <div class="comp-icon-box storage-color">
+              <span>💾</span>
+            </div>
+            <div class="comp-meta">
+              <span class="comp-tag">Хранение данных</span>
+              <h3 class="comp-name">Накопители (SSD и HDD)</h3>
+            </div>
+          </div>
+          <p class="comp-summary">
+            Место, где постоянно живут ваша Windows, установленные игры, документы, фильмы и фотографии даже после отключения питания.
+          </p>
+          <div class="comp-specs-list">
+            <div class="spec-row">
+              <span class="spec-name">M.2 NVMe SSD</span>
+              <span class="spec-val">Сверхбыстрый (до 7000 МБ/с), ставится под систему и игры</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">SATA SSD (2.5")</span>
+              <span class="spec-val">Хорошая замена старым дискам (~500 МБ/с)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">HDD (жёсткий диск)</span>
+              <span class="spec-val">Медленный (~150 МБ/с), но дешёвый для больших архивов</span>
+            </div>
+          </div>
+          <div class="comp-tip">
+            <strong>Совет:</strong> В 2026 году ставить операционную систему на старый жёсткий диск HDD категорически не рекомендуется. Только быстрый SSD!
+          </div>
+        </article>
+
+        <!-- 5. Motherboard -->
+        <article class="comp-card" id="motherboard">
+          <div class="comp-header">
+            <div class="comp-icon-box mb-color">
+              <span>🔌</span>
+            </div>
+            <div class="comp-meta">
+              <span class="comp-tag">Связующее звено</span>
+              <h3 class="comp-name">Материнская плата</h3>
+            </div>
+          </div>
+          <p class="comp-summary">
+            Главная печатная плата. Она физически объединяет процессор, видеокарту, память и диски в единую слаженную систему и передает между ними сигналы и питание.
+          </p>
+          <div class="comp-specs-list">
+            <div class="spec-row">
+              <span class="spec-name">Сокет (Socket)</span>
+              <span class="spec-val">Разъём под процессор (должен строго совпадать с CPU)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Форм-фактор</span>
+              <span class="spec-val">ATX (стандартный), Micro-ATX (популярный компактный)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Слоты расширения</span>
+              <span class="spec-val">PCIe для видеокарты, слоты M.2 для быстрых SSD</span>
+            </div>
+          </div>
+          <div class="comp-tip">
+            <strong>Совет:</strong> Проверяйте совместимость сокета материнской платы и процессора перед покупкой (например, Intel LGA1700 или AMD AM5).
+          </div>
+        </article>
+
+        <!-- 6. Power & Case -->
+        <article class="comp-card" id="psu">
+          <div class="comp-header">
+            <div class="comp-icon-box psu-color">
+              <span>🔋</span>
+            </div>
+            <div class="comp-meta">
+              <span class="comp-tag">Питание и корпус</span>
+              <h3 class="comp-name">Блок питания и Охлаждение</h3>
+            </div>
+          </div>
+          <p class="comp-summary">
+            Блок питания преобразует напряжение из розетки (220В) в безопасный стабильный постоянный ток для всех узлов ПК. Кулеры и вентиляторы отводят тепло.
+          </p>
+          <div class="comp-specs-list">
+            <div class="spec-row">
+              <span class="spec-name">Мощность БП</span>
+              <span class="spec-val">500–650 Вт для средних ПК, 750–850+ Вт для мощных</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Сертификация</span>
+              <span class="spec-val">80 PLUS Bronze или Gold (гарантия надёжности)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Охлаждение CPU</span>
+              <span class="spec-val">Башенный воздушный кулер или СЖО (водянка)</span>
+            </div>
+          </div>
+          <div class="comp-tip">
+            <strong>Совет:</strong> Никогда не экономьте на блоке питания. Дешёвый безымянный БП при поломке может вывести из строя другие дорогие детали.
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Интерактивный конфигуратор / подбор ПК под задачи -->
+  <section class="builder-section" id="builder">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="section-tag">Практика</span>
+        <h2 class="section-title">Интерактивный подбор сборки</h2>
+        <p class="section-desc">Выберите задачу, и система покажет сбалансированную конфигурацию без переплат.</p>
+      </div>
+
+      <!-- Переключатели вариантов -->
+      <div class="builder-tabs" role="tablist">
+        <button class="tab-btn active" data-build="office" id="tab-office">📄 Офис и учёба</button>
+        <button class="tab-btn" data-build="gaming" id="tab-gaming">🎮 Оптимальный игровой</button>
+        <button class="tab-btn" data-build="pro" id="tab-pro">🚀 Работа, 3D и видео</button>
+      </div>
+
+      <!-- Карточка выбранной сборки -->
+      <div class="build-display-card" id="build-card">
+        <div class="build-header">
+          <div>
+            <span class="build-badge" id="build-category-badge">Бюджетная сборка</span>
+            <h3 class="build-title" id="build-title">Компьютер для работы, сёрфинга и учёбы</h3>
+          </div>
+          <div class="build-price-box">
+            <span class="price-label">Ориентир цены:</span>
+            <span class="price-val" id="build-price">~30 000 – 40 000 ₽</span>
+          </div>
+        </div>
+
+        <p class="build-desc" id="build-desc">
+          Тихий и надёжный системный блок для текстовых редакторов, десятков вкладок в браузере, просмотра видео в 4K и простых нетребовательных задач.
+        </p>
+
+        <div class="build-components-table-wrap">
+          <table class="build-table">
+            <thead>
+              <tr>
+                <th>Узел</th>
+                <th>Рекомендуемая деталь</th>
+                <th>Почему именно она</th>
+              </tr>
+            </thead>
+            <tbody id="build-table-body">
+              <!-- Заполняется динамически JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Сравнительная таблица для быстрого понимания -->
+  <section class="summary-table-section">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="section-tag">Шпаргалка</span>
+        <h2 class="section-title">Сводная таблица характеристик</h2>
+        <p class="section-desc">Краткая памятка для быстрого ориентирования в терминах.</p>
+      </div>
+
+      <div class="table-card">
+        <div class="table-responsive">
+          <table class="summary-table">
+            <thead>
+              <tr>
+                <th>Компонент</th>
+                <th>Ключевой параметр</th>
+                <th>Минимум (2026)</th>
+                <th>Оптимальный выбор</th>
+                <th>Для кого важно</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Процессор</strong></td>
+                <td>Ядра / Частота</td>
+                <td>4 ядра / 3.8 ГГц</td>
+                <td>6–8 ядер / 4.5+ ГГц</td>
+                <td>Все (быстродействие ОС и программ)</td>
+              </tr>
+              <tr>
+                <td><strong>Видеокарта</strong></td>
+                <td>Объём VRAM</td>
+                <td>Встроенная графика</td>
+                <td>8 – 12 ГБ VRAM</td>
+                <td>Геймеры, 3D-моделлеры, видеомонтажёры</td>
+              </tr>
+              <tr>
+                <td><strong>Оперативка</strong></td>
+                <td>Объём / Скорость</td>
+                <td>8 ГБ DDR4</td>
+                <td>16–32 ГБ DDR5/DDR4</td>
+                <td>Многозадачность, браузер с кучей вкладок</td>
+              </tr>
+              <tr>
+                <td><strong>Накопитель</strong></td>
+                <td>Тип / Скорость</td>
+                <td>256 ГБ SATA SSD</td>
+                <td>1 ТБ M.2 NVMe SSD</td>
+                <td>Мгновенная загрузка системы и игр</td>
+              </tr>
+              <tr>
+                <td><strong>Блок питания</strong></td>
+                <td>Мощность / 80 PLUS</td>
+                <td>450 Вт</td>
+                <td>650–750 Вт Gold</td>
+                <td>Безопасность и тишина всей системы</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Интерактивный мини-квиз -->
+  <section class="quiz-section" id="quiz">
+    <div class="container">
+      <div class="quiz-wrapper">
+        <div class="quiz-intro">
+          <span class="section-tag">Проверка знаний</span>
+          <h2 class="section-title">Мини-тест: насколько хорошо вы знаете ПК?</h2>
+          <p>Ответьте на 5 простых вопросов, чтобы закрепить прочитанный материал.</p>
+          <div class="quiz-score-badge" id="quiz-badge">Вопрос 1 из 5</div>
+        </div>
+
+        <div class="quiz-box" id="quiz-container">
+          <div class="quiz-question" id="quiz-question-text">Загрузка вопроса...</div>
+          <div class="quiz-options" id="quiz-options-container">
+            <!-- Варианты ответов генерируются JS -->
+          </div>
+          <div class="quiz-feedback" id="quiz-feedback"></div>
+          <div class="quiz-actions">
+            <button class="btn btn-primary" id="quiz-next-btn" style="display: none;">Следующий вопрос →</button>
+            <button class="btn btn-secondary" id="quiz-restart-btn" style="display: none;">Пройти заново ↻</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подвал сайта -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="brand-logo footer-logo">
+          <span class="logo-icon">💻</span>
+          <span class="logo-title">PC<span class="logo-accent">Guide</span></span>
+        </div>
+        <p class="footer-desc">
+          Простой и понятный справочник по комплектующим персонального компьютера. Создан для быстрого изучения основы компьютерной грамотности.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="#cpu">Процессор (CPU)</a></li>
+          <li><a href="#gpu">Видеокарта (GPU)</a></li>
+          <li><a href="#ram">Оперативная память</a></li>
+          <li><a href="#storage">Накопители данных</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Интерактив</h4>
+        <ul>
+          <li><a href="#builder">Подбор конфигурации</a></li>
+          <li><a href="#quiz">Пройти мини-тест</a></li>
+          <li><a href="https://github.com/9KingOfGames6/pc-basics-guide" target="_blank" rel="noopener noreferrer">Репозиторий на GitHub ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container text-center">
+        <p>© 2026 PCGuide — Учебный проект о комплектующих персонального компьютера.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
